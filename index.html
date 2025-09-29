@@ -1,73 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Social Hub</title>
-  <link rel="stylesheet" href="CSS/styles.css">
+  <link rel="stylesheet" href="CSS/styles.css" />
+  <style>
+    /* Basic navbar styling */
+    nav {
+      background-color: #2a6fa1;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      padding: 6px 12px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+    nav a:hover {
+      background-color: #1b4d72;
+    }
+  </style>
 </head>
 <body>
-  <section>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#about">About Us</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="home">
     <h1>Social Hub</h1>
-  <br>
-  <P>This is a website where users can come and feel safe to express their issuse with the community. There are also guidance and counseling members within the group readily available to disccuss issues you consider too private.</P>
+    <br />
+    <p>
+      This is a website where users can come and feel safe to express their
+      issues with the community. There are also guidance and counseling
+      members within the group readily available to discuss issues you
+      consider too private.
+    </p>
   </section>
-  
-<section>
-  <h2>Services offered</h2>
-  <ul>
-    <li>Community Support</li>
-    <li>Guidance and Counseling</li>
-    <li>Peer Discussions</li>
-    <li>Resource Sharing</li>
-    <li>Workshops and Webinars</li>
-  </ul>
-  
-  <br>
-</section>
-  <br>
-  
+
+  <section id="services">
+    <h2>Services offered</h2>
+    <ul>
+      <li>Community Support</li>
+      <li>Guidance and Counseling</li>
+      <li>Peer Discussions</li>
+      <li>Resource Sharing</li>
+      <li>Workshops and Webinars</li>
+    </ul>
+    <br />
+  </section>
+
+  <br />
+
   <a class="button-link" href="https://github.com/Aswamas23">My github</a>
-  <br>
-  <br>
+  <br />
+  <br />
 
-<img src="images/priscilla-du-preez-F9DFuJoS9EU-unsplash.jpg" alt="A counseling session in progress"width="300"height="300"> 
- <img src="images/dylan-ferreira-HJmxky8Fvmo-unsplash.jpg" alt="A counseling session in progress"width="300"height="300"> 
- 
+  <img
+    src="images/priscilla-du-preez-F9DFuJoS9EU-unsplash.jpg"
+    alt="A counseling session in progress"
+    width="300"
+    height="300"
+  />
+  <img
+    src="images/dylan-ferreira-HJmxky8Fvmo-unsplash.jpg"
+    alt="A counseling session in progress"
+    width="300"
+    height="300"
+  />
 
-  <table style="border: 2px solid #555; border-collapse: collapse; width: 100%;">
-  <caption style="caption-side: top; font-weight: bold; font-size: 1.2rem; margin-bottom: 8px;">
-    Product and Services Ratings
-  </caption>
- 
-  <tr>
-    <td style="border: 1px solid #555; padding: 8px;">Counselors training</td>
-    <td style="border: 1px solid #555; padding: 8px;">$99</td>
-    <td style="border: 1px solid #555; padding: 8px;">4.7/5</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #555; padding: 8px;">Guidance and counseling sessions</td>
-    <td style="border: 1px solid #555; padding: 8px;">$15/month</td>
-    <td style="border: 1px solid #555; padding: 8px;">4.3/5</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #555; padding: 8px;">Workshops</td>
-    <td style="border: 1px solid #555; padding: 8px;">$8/month</td>
-    <td style="border: 1px solid #555; padding: 8px;">4.9/5</td>
-  </tr>
-</table>
+  <table
+    style="
+      border: 2px solid #555;
+      border-collapse: collapse;
+      width: 100%;
+    "
+  >
+    <caption
+      style="
+        caption-side: top;
+        font-weight: bold;
+        font-size: 1.2rem;
+        margin-bottom: 8px;
+      "
+    >
+      Product and Services Ratings
+    </caption>
 
-<br>
+    <tr>
+      <td style="border: 1px solid #555; padding: 8px">Counselors training</td>
+      <td style="border: 1px solid #555; padding: 8px">$99</td>
+      <td style="border: 1px solid #555; padding: 8px">4.7/5</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #555; padding: 8px">
+        Guidance and counseling sessions
+      </td>
+      <td style="border: 1px solid #555; padding: 8px">$15/month</td>
+      <td style="border: 1px solid #555; padding: 8px">4.3/5</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #555; padding: 8px">Workshops</td>
+      <td style="border: 1px solid #555; padding: 8px">$8/month</td>
+      <td style="border: 1px solid #555; padding: 8px">4.9/5</td>
+    </tr>
+  </table>
 
+  <br />
+  <br />
 
-<br>
-<br>
+  <iframe
+    width="560"
+    height="315"
+    src="https://www.youtube.com/embed/qz0aGYrrlhU?si=_9kKp6kSMwsr4Q-r"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen
+  ></iframe>
+  <br />
+  <br />
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/qz0aGYrrlhU?si=_9kKp6kSMwsr4Q-r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-<br>
-<br>
-
-  <footer><marquee behavior="" direction="">Developed by Adrian Munyasia &2025</marquee></footer>
-
+  <footer>
+    <marquee behavior="" direction="">
+      Developed by Adrian Munyasia &2025
+    </marquee>
+  </footer>
 </body>
 </html>
