@@ -94,3 +94,22 @@ img {
    width: 400px;
    height: 400px;
 }
+ol {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333333;
+  background-color: #f9f9f9;
+  padding: 15px 25px;
+  border-radius: 8px;
+  width: fit-content;
+  max-width: 600px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  list-style-type: decimal;
+  list-style-position: outside;
+}
+
+ol li {
+  margin: 12px 0;
+  line-height: 1.5;
+}
