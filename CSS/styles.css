@@ -1,69 +1,81 @@
-body {
-    font-family: 'Segoe UI', Arial, sans-serif;
-    background: #f7f9fb;
-    color: #222;
-    margin: 0;
-    padding: 0 20px;
+/* =========================
+   Root variables and base
+   ========================= */
+:root{
+  --blue-900:#0b5fa8;
+  --blue-800:#0f6fc7;
+  --blue-700:#1b7fd6;
+  --blue-600:#228be6;
+  --blue-500:#2f9ef7;
+  --row-even:#e9f7ff;
+  --row-odd:#f5fbff;
+  --strip-1:#b9e9f0;
+  --strip-2:#2fb8cf;
+  --header-txt:#f5a25a;
+  --text:#0b1b2b;
+  --shadow: rgba(0,0,0,.18);
+  --border:#2a6fb2;
 }
 
+/* =========================
+   Global typography & body
+   ========================= */
+html { font-size: 16px; }
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f7f9fb;
+  color: #222;
+  margin: 0;
+  padding: 0 20px;
+}
+
+/* Headings */
 h1 {
-    text-align: center;
-    color: #2a6fa1;
-    margin-top: 40px;
-    font-size: 2.5em;
-    letter-spacing: 2px;
+  text-align: center;
+  color: #2a6fa1;
+  margin-top: 40px;
+  font-size: 2.5em;
+  letter-spacing: 2px;
 }
 
 h2 {
-    color: #1b4d72;
-    margin: 30px auto 0;  /* Auto left/right margins to center the h2 element */
-    font-size: 1.5em;
-    border-bottom: 2px solid #e0e7ef;
-    padding-bottom: 8px;  /* Uncommented for spacing */
-    width: fit-content;
-    text-align: center;   /* Center text inside the h2 */
+  color: #1b4d72;
+  margin: 30px auto 0;
+  font-size: 1.5em;
+  border-bottom: 2px solid #e0e7ef;
+  padding-bottom: 8px;
+  width: fit-content;
+  text-align: center;
 }
 
-
+/* Paragraphs and lists */
 p {
-    max-width: 700px;
-    margin: 20px auto;
-    font-size: 1.1em;
-    line-height: 1.6;
-    background: #eaf3fa;
-    padding: 18px 24px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(42, 111, 161, 0.07);
+  max-width: 700px;
+  margin: 20px auto;
+  font-size: 1.1em;
+  line-height: 1.6;
+  background: #eaf3fa;
+  padding: 18px 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(42, 111, 161, 0.07);
 }
 
 ul {
-    max-width: 600px;
-    margin: 24px auto;
-    padding: 0 24px;
-    list-style-type: disc;
+  max-width: 600px;
+  margin: 24px auto;
+  padding: 0 24px;
+  list-style-type: disc;
 }
 
 li {
-    font-size: 1.08em;
-    margin-bottom: 12px;
-    padding-left: 6px;
-    color: #24577a;
+  font-size: 1.08em;
+  margin-bottom: 12px;
+  padding-left: 6px;
+  color: #24577a;
 }
 
-@media (max-width: 600px) {
-    body {
-        padding: 0 8px;
-    }
-    h1 {
-        font-size: 2em;
-    }
-    h2 {
-        font-size: 1.2em;
-    }
-    p, ul {
-        padding: 12px;
-    }
-}
+/* Buttons and links styled as buttons */
 button,
 input[type="submit"],
 a.button-link {
@@ -90,67 +102,73 @@ input[type="submit"]:active,
 a.button-link:active {
   transform: translateY(1px);
 }
+
+/* Images */
 img {
-   width: 400px;
-   height: 400px;
+  width: 400px;
+  height: 400px;
 }
-/* Styling a Page Header */
+
+/* =========================
+   Simple exercises/utilities
+   ========================= */
+
+/* Page Header override sample */
 h1 {
-  color: red;           /* red as requested */
-  text-align: center;   /* centered */
-  font-family: Arial, sans-serif; /* Arial */
+  color: red; /* sample override */
+  text-align: center;
+  font-family: Arial, sans-serif;
 }
-/* Creating a Highlight Class */
+
+/* Highlight utility */
 .highlight {
-  font-weight: bold;          /* bold */
-  background: yellow;         /* yellow background */
-  font-size: 20px;            /* 20px size */
-  padding: 4px 6px;           /* slight padding for readability */
-  border-radius: 4px;         /* softer feel */
+  font-weight: bold;
+  background: yellow;
+  font-size: 20px;
+  padding: 4px 6px;
+  border-radius: 4px;
 }
-/* Box Model Practice */
+
+/* Box model practice */
 .post-card {
-  margin: 20px;                 /* outer space */
-  padding: 10px;                /* inner space */
-  border: 2px solid #000;       /* solid black border */
-  background: #fff;             /* clean canvas */
-  border-radius: 8px;           /* friendly look */
+  margin: 20px;
+  padding: 10px;
+  border: 2px solid #000;
+  background: #fff;
+  border-radius: 8px;
 }
-/* Responsive Design */
-@media (max-width: 600px) {
-  body {
-    background: lightblue;  /* requested behavior */
-  }
-}
-/* Background Image */
+
+/* Background banner */
 .banner {
-  background-image: url('https://images.unsplash.com/photo-1417325384643-aac51acc9e5d?w=1600&auto=format&fit=crop&q=80'); /* placeholder path */
-  background-repeat: no-repeat;   /* do not repeat */
-  background-size: cover;         /* cover whole area */
-  background-position: center;    /* center focus */
-  min-height: 240px;              /* visible height */
+  background-image: url('https://images.unsplash.com/photo-1417325384643-aac51acc9e5d?w=1600&auto=format&fit=crop&q=80');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 240px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #ffffff;
   text-shadow: 0 1px 2px rgba(0,0,0,0.35);
 }
-/* Transition Effect */
+
+/* CTA with transition */
 .cta-share {
-  background: #1e90ff;                 /* blue base */
+  background: #1e90ff;
   color: #fff;
   border: none;
   padding: 10px 16px;
   border-radius: 6px;
   cursor: pointer;
-  transition: background-color 0.5s ease; /* smooth 0.5s */
+  transition: background-color 0.5s ease;
 }
 .cta-share:hover {
-  background: #2ecc71;                 /* green on hover */
+  background: #2ecc71;
 }
-/* Absolute vs Relative Positioning */
+
+/* Positioning demo */
 .relative-box {
-  position: relative;                /* creates positioning context */
+  position: relative;
   height: 120px;
   margin: 20px;
   background: #f0f4ff;
@@ -158,7 +176,7 @@ h1 {
 }
 
 .absolute-badge {
-  position: absolute;                /* positioned relative to .relative-box */
+  position: absolute;
   top: 8px;
   right: 8px;
   background: #ff7675;
@@ -169,28 +187,27 @@ h1 {
 }
 
 .absolute-alone {
-  position: absolute;                /* positioned relative to the viewport */
-  top: 20px;                         /* will sit near the top-left of the page */
+  position: absolute;
+  top: 20px;
   left: 20px;
   background: #ffeaa7;
   padding: 6px 10px;
   border-radius: 6px;
 }
-html { font-size: 16px; }       /* baseline for rem */
+
+/* Units demo */
 .unit-parent {
-  font-size: 20px;              /* parent font size to show em scaling */
+  font-size: 20px;
   margin: 20px 0;
   background: #f9fbff;
   padding: 12px;
   border-radius: 6px;
 }
+.px-size { font-size: 16px; }
+.em-size { font-size: 1.25em; }
+.rem-size { font-size: 1.25rem; }
 
-/* Using Different CSS Units */
-.px-size  { font-size: 16px; }  /* fixed, unaffected by parent */
-.em-size  { font-size: 1.25em; }/* scales with parent (20px * 1.25 = 25px) */
-.rem-size { font-size: 1.25rem; }/* scales with root (16px * 1.25 = 20px) */
-
-/* Grid or Flex Layout — using Flexbox */
+/* Layout: two-column flex */
 .two-col {
   display: flex;
   gap: 16px;
@@ -199,13 +216,222 @@ html { font-size: 16px; }       /* baseline for rem */
 .feed { flex: 2; background: #ffffff; padding: 12px; border-radius: 8px; }
 .sidebar { flex: 1; background: #f2f6ff; padding: 12px; border-radius: 8px; }
 
-/* Stack columns on small screens */
+/* Color format samples */
+.rgb-text { color: rgb(255,0,0); }
+.hex-text { color: #00ff00; }
+.hsl-text { color: hsl(240, 100%, 50%); }
+
+/* Navigation */
+nav {
+  background-color: #2a6fa1;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+nav a:hover {
+  background-color: #1b4d72;
+}
+
+/* =========================
+   Table system (from styles.css)
+   ========================= */
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  color: var(--text);
+  background: #ffffff;
+  margin: 24px;
+  line-height: 1.35;
+}
+
+h1 {
+  font-size: 42px;
+  margin: 12px 0 14px;
+}
+
+.table-wrap{
+  max-width: 980px;
+  margin: 8px 0 36px;
+}
+
+table{
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 2px 10px var(--shadow);
+  overflow: hidden;
+  border: 3px solid var(--border);
+  margin-bottom: 40px; /* keep from style.css table spacing */
+}
+
+caption{
+  text-align: left;
+  font-weight: 700;
+  font-size: 24px;
+  margin: 6px 0 12px;
+}
+
+thead th{
+  color: var(--header-txt);
+  text-align: left;
+  padding: 12px 14px;
+  font-size: 20px;
+  letter-spacing: .3px;
+  background: linear-gradient(180deg, var(--blue-700), var(--blue-600));
+  border-bottom: 3px solid var(--border);
+}
+
+tbody td, tbody th{
+  padding: 12px 14px;
+  font-size: 18px;
+  border-top: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+}
+
+tbody td:last-child, tbody th:last-child{ border-right: none; }
+
+tbody tr:nth-child(even){ background: var(--row-even); }
+tbody tr:nth-child(odd){ background: var(--row-odd); }
+
+
+.banded tbody tr:nth-child(2){
+  background: linear-gradient(180deg, var(--strip-2), var(--strip-1));
+}
+
+
+.deep-header thead th{
+  background: linear-gradient(180deg, var(--blue-900), var(--blue-700));
+  color: #fff;
+}
+
+
+.banded tbody tr th:nth-child(1),
+.banded tbody tr td:nth-child(1) { background: #fff8e6; color: #222; }
+.banded tbody tr th:nth-child(2),
+.banded tbody tr td:nth-child(2) { background: #ffe6e6; }
+.banded tbody tr th:nth-child(3),
+.banded tbody tr td:nth-child(3) { background: #e6fff2; }
+.banded tbody tr th:nth-child(4),
+.banded tbody tr td:nth-child(4) { background: #e6f0ff; }
+
+.deep-header tbody tr th:nth-child(1),
+.deep-header tbody tr td:nth-child(1) { background: #fbe8ff; }
+.deep-header tbody tr th:nth-child(2),
+.deep-header tbody tr td:nth-child(2) { background: #e8f7ff; }
+.deep-header tbody tr th:nth-child(3),
+.deep-header tbody tr td:nth-child(3) { background: #fff8e6; }
+.deep-header tbody tr th:nth-child(4),
+.deep-header tbody tr td:nth-child(4) { background: #f0f7e6; }
+
+
+tbody tr:hover td,
+tbody tr:hover th { filter: brightness(0.99); }
+
+
+.banded tbody tr:nth-child(1) th:nth-child(1),
+.banded tbody tr:nth-child(1) td:nth-child(1) { background: #fff3e0; }
+.banded tbody tr:nth-child(1) td:nth-child(2) { background: #ffe0f0; }
+.banded tbody tr:nth-child(1) td:nth-child(3) { background: #e8fff2; }
+.banded tbody tr:nth-child(1) td:nth-child(4) { background: #e6f0ff; }
+.banded tbody tr:nth-child(2) th:nth-child(1),
+.banded tbody tr:nth-child(2) td:nth-child(1) { background: #fff0f0; }
+.banded tbody tr:nth-child(2) td:nth-child(2) { background: #fff8e6; }
+.banded tbody tr:nth-child(2) td:nth-child(3) { background: #e6fff7; }
+.banded tbody tr:nth-child(2) td:nth-child(4) { background: #e6eefc; }
+.banded tbody tr:nth-child(3) th:nth-child(1),
+.banded tbody tr:nth-child(3) td:nth-child(1) { background: #fffde6; }
+.banded tbody tr:nth-child(3) td:nth-child(2) { background: #f0e6ff; }
+.banded tbody tr:nth-child(3) td:nth-child(3) { background: #e6fff0; }
+.banded tbody tr:nth-child(3) td:nth-child(4) { background: #e6f7ff; }
+
+
+.deep-header tbody tr:nth-child(1) th:nth-child(1),
+.deep-header tbody tr:nth-child(1) td:nth-child(1) { background: #f9e6ff; }
+.deep-header tbody tr:nth-child(1) td:nth-child(2) { background: #e6f6ff; }
+.deep-header tbody tr:nth-child(1) td:nth-child(3) { background: #fff2e6; }
+.deep-header tbody tr:nth-child(1) td:nth-child(4) { background: #f0fff0; }
+.deep-header tbody tr:nth-child(2) th:nth-child(1),
+.deep-header tbody tr:nth-child(2) td:nth-child(1) { background: #fff0f9; }
+.deep-header tbody tr:nth-child(2) td:nth-child(2) { background: #e6f0ff; }
+.deep-header tbody tr:nth-child(2) td:nth-child(3) { background: #fff8e6; }
+.deep-header tbody tr:nth-child(2) td:nth-child(4) { background: #f7ffe6; }
+.deep-header tbody tr:nth-child(3) th:nth-child(1),
+.deep-header tbody tr:nth-child(3) td:nth-child(1) { background: #fff4e6; }
+.deep-header tbody tr:nth-child(3) td:nth-child(2) { background: #e6fff9; }
+.deep-header tbody tr:nth-child(3) td:nth-child(3) { background: #f0e6ff; }
+.deep-header tbody tr:nth-child(3) td:nth-child(4) { background: #eef6ff; }
+
+/* Ensure table text readable */
+tbody th, tbody td { color: #142028; }
+
+
 @media (max-width: 600px) {
+  body { padding: 0 8px; background: lightblue; }
+  h1 { font-size: 2em; }
+  h2 { font-size: 1.2em; }
+  p, ul { padding: 12px; }
   .two-col { flex-direction: column; }
 }
-/* Color Formats */
-.rgb-text { color: rgb(255,0,0); }           /* red */
-.hex-text { color: #00ff00; }                /* green */
-.hsl-text { color: hsl(240, 100%, 50%); }    /* blue */
 
 
+/* Table 1 - Header */
+.cell-1 { background-color: #6495ED; color: white; }
+.cell-2 { background-color: #FF4500; color: white; }
+.cell-3 { background-color: #808080; color: white; }
+.cell-4 { background-color: #FF8C00; color: white; }
+
+/* Table 1 - Row 1 */
+.cell-5 { background-color: #90EE90; color: black; }
+.cell-6 { background-color:#0b1b2b; color:white; }
+.cell-7 { background-color: #00CED1; color: white; }
+.cell-8 { background-color: #4B0082; color: black; }
+
+/* Table 1 - Row 2 */
+.cell-9  { background-color: #C0C0C0; color: black; }
+.cell-10 { background-color: #9370DB; color: white; }
+.cell-11 { background-color: #4B0082; color: white; }
+.cell-12 { background-color: #8B4513; color: white; }
+
+/* Table 1 - Row 3 */
+.cell-13 { background-color: #FFC0CB; color: black; }
+.cell-14 { background-color: #FF00FF; color: white; }
+.cell-15 { background-color: #0000FF; color: white; }
+.cell-16 { background-color: #00BFFF; color: black; }
+
+/* Table 1 - Row 4 */
+.cell-17 { background-color: #00FFFF; color: black; }
+.cell-18 { background-color: #FF4500; color: white; }
+.cell-19 { background-color: #00FF00; color: black; }
+.cell-20 { background-color: #FFFF00; color: black; }
+
+/* Table 2 - Header */
+.cell-21 { background-color: #333; color: white; }
+.cell-22 { background-color: #8B4513; color: white; }
+.cell-23 { background-color: #FF00FF; color: white; }
+.cell-24 { background-color: #FFFF00; color: white; }
+
+/* Table 2 - Row 1 */
+.cell-25 { background-color: #4B0082; color: black; }
+.cell-26 { background-color: blanchedalmond; color: black; }
+.cell-27 { background-color: #808080; color: black; }
+.cell-28 { background-color: #00FF00; color: black; }
+
+/* Table 2 - Row 2 */
+.cell-29 { background-color: brown; color: black; }
+.cell-30 { background-color: #00CED1; color: black; }
+.cell-31 { background-color: bisque; color: black; }
+.cell-32 { background-color: cadetblue; color: black; }
+
+/* Table 2 - Row 3 */
+.cell-33 { background-color: #333; color: black; }
+.cell-34 { background-color: #90EE90; color: black; }
+.cell-35 { background-color: #FFC0CB; color: black; }
+.cell-36 { background-color: #808080; color: black; }
